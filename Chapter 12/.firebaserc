@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "friends-4d4fa",
+    "staging": "friends-staging"
+  }
+}

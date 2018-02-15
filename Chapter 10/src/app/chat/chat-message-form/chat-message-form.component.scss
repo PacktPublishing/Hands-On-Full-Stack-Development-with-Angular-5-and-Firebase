@@ -1,0 +1,27 @@
+@import "../../shared/colors";
+
+.chat-message-form-main-container {
+
+    .chat-message-form-container {
+        padding: 9px 50px;
+        margin-bottom: 14px;
+        background-color: #f7f7f9;
+        border: 1px solid #e1e1e8;
+        border-radius: 4px;
+
+        .message-text {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: #ffffff;
+            border: 1px solid $sushi;
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+}

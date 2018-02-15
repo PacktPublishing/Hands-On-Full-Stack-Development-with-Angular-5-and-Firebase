@@ -1,0 +1,23 @@
+.title{
+    margin-left: 24px;
+}
+
+.nav-container{
+  .bg-color{
+    background-color: cadetblue;
+  }
+  .form-container{
+    margin-left: 500px;
+    .search-container{
+      display: inline;
+      .label-name{
+        display: block;
+        text-align: left;
+        float: left;
+      }
+      .button-add{
+        float: right;
+      }
+    }
+  }
+}

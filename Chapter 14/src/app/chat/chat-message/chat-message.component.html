@@ -1,0 +1,8 @@
+<div class="chat-message-main-container">
+    <div class="message-bubble" [class.receiver]="isReceiver(message)" [class.sender]="isSender(message)">
+        <p>{{ message.message }}</p>
+        <div class="timestamp">
+            {{ message.timestamp | date:"MM/dd/yy hh:mm a" }}
+        </div>
+    </div>
+</div>

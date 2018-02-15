@@ -1,0 +1,47 @@
+@import "../../shared/shared";
+
+.chat-message-main-container {
+
+    .message-bubble {
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 6px #B2B2B2;
+        display: inline-block;
+        padding: 10px 18px;
+        position: relative;
+        vertical-align: top;
+        width: 400px;
+    }
+
+    .message-bubble::before {
+        background-color: #ffffff;
+        content: "\00a0";
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        @include message-pointer(29deg , -35deg);
+        width: 20px;
+    }
+
+    .sender {
+        display: inherit;
+        margin: 5px 45px 5px 20px;
+    }
+
+    .sender::before {
+        box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4);
+        left: -9px;
+    }
+
+    .receiver {
+        display: inherit;
+        margin: 5px 20px 5px 170px;
+    }
+
+    .receiver::before {
+        box-shadow: 2px -2px 2px 0 rgba(178, 178, 178, .4);
+        right: -9px;
+    }
+
+}

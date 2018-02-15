@@ -1,0 +1,7 @@
+@mixin message-pointer($rotate , $skew) {
+    transform: rotate($rotate) skew($skew);
+    -moz-transform: rotate($rotate) skew($skew);
+    -ms-transform: rotate($rotate) skew($skew);
+    -o-transform: rotate($rotate) skew($skew);
+    -webkit-transform: rotate($rotate) skew($skew);
+}

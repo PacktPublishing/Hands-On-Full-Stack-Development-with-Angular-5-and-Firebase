@@ -1,0 +1,53 @@
+.user-profile{
+    width: 50%;
+    margin-left: 24px;
+    margin-top: 10px;
+    .person-icon{
+        width: 200px;
+        height: 200px;
+    }
+    .user-profile-name{
+        text-align: left;
+        margin-top: 10px;
+        .user-profile-name-value{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .user-profile-name-btn{
+            margin-left: 100px;
+        }
+    }
+    .user-profile-email{
+        text-align: left;
+        margin-top: 20px;
+        .user-profile-email-value{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+    .user-profile-mobile{
+        text-align: left;
+        margin-top: 20px;
+        .user-profile-mobile-value{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .user-profile-mobile-btn{
+            margin-left: 110px;
+        }
+    }
+    .user-profile-password{
+        text-align: left;
+        margin-top: 20px;
+        .user-profile-password-value{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .user-profile-password-btn{
+            margin-left: 154px;
+        }
+    }
+    .user-profile-btn{
+        margin-top: 20px;
+    }
+}

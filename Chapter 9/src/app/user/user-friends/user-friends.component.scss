@@ -1,0 +1,25 @@
+.main_container {
+    margin-top: 10px;
+    margin-left: 80px;
+    .content_container {
+        display: inline;
+        .list {
+            float: left;
+            .card-img-top {
+                height: 180px;
+                width: 260px;
+                background-image: url('../../../assets/images/person.png');
+            }
+        }
+
+        .left {
+            float: left;
+            margin-top: 140px;
+        }
+
+        .right {
+            float: left;
+            margin-top: 140px;
+        }
+    }
+}

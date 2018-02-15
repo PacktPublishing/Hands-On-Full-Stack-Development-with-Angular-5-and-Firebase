@@ -1,0 +1,39 @@
+<div class="user-profile" *ngIf="user">
+    <div class="person-icon">
+      <img [src]="profileImage" style="max-width: 100%; max-height: 100%;">
+      <input (change)="onPersonEdit($event)" required accept=".jpg" type="file" style="opacity: 0.0; position: absolute; top:120px; left: 30px; bottom: 0; right:0; width: 200px; height:200px;" />
+    </div>
+    <div class="user-profile-name">
+        <label>Name: </label>
+        <div class="user-profile-name-value">{{user?.name}}</div>
+        <button (click)="onNameChange()" data-toggle="modal" data-target="#editModal" type="button" class="btn btn-default btn-sm user-profile-name-btn">
+            Edit
+        </button>
+    </div>
+    <div class="user-profile-email">
+        <label>Email: </label>
+        <div class="user-profile-email-value">{{user?.email}}</div>
+        <button (click)="onEmailChange()" data-toggle="modal" data-target="#editModal" type="button" class="btn btn-default btn-sm">
+            Edit
+        </button>
+    </div>
+    <div class="user-profile-mobile">
+        <label>Mobile: </label>
+        <div class="user-profile-mobile-value">{{user?.mobile}}</div>
+        <button (click)="onMobileChange()" data-toggle="modal" data-target="#editModal" type="button" class="btn btn-default btn-sm user-profile-mobile-btn">
+            Edit
+        </button>
+    </div>
+
+    <div class="user-profile-password">
+        <label>Password: </label>
+        <div class="user-profile-password-value">****</div>
+        <button (click)="onPasswordChange()" data-toggle="modal" data-target="#editModal" type="button" class="btn btn-default btn-sm user-profile-password-btn">
+            Edit
+        </button>
+    </div>
+    <div class="user-profile-btn">
+        <button type="button" (click)='onLogout()' class="btn btn-info">LOGOUT</button>
+    </div>
+</div>
+<app-edit-dialog></app-edit-dialog>
