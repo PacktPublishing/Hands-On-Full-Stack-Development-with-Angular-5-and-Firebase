@@ -40,18 +40,18 @@ export class UserService {
     }
 
 
-    public updateEmail(user: User, newEmail: string): void {
-        this.fireDb.object(`${USERS_CHILD}/'${user.uid}`).update({email: newEmail});
+     public updateEmail(user: User, newEmail: string): void {
+        this.fireDb.object(`${USERS_CHILD}/${user.uid}`).update({email: newEmail});
         this.saveUser(user);
     }
 
     public updateMobile(user: User, mobile: string): void {
-        this.fireDb.object(`${USERS_CHILD}/'${user.uid}`).update({mobile: mobile});
+        this.fireDb.object(`${USERS_CHILD}/${user.uid}`).update({mobile: mobile});
         this.saveUser(user);
     }
 
     public updateName(user: User, name: string): void {
-        this.fireDb.object(`${USERS_CHILD}/'${user.uid}`).update({name: name});
+        this.fireDb.object(`${USERS_CHILD}/${user.uid}`).update({name: name});
         this.saveUser(user);
     }
 
