@@ -22,7 +22,7 @@ export class SignupComponent {
         this.authService.signup(signupFormData.value.email, signupFormData.value.password).then((userInfo) => {
             // Register the new user
             const user: User = new User(signupFormData.value.email,
-                signupFormData.value.name, signupFormData.value.mobile, userInfo.uid, 0, '');
+                signupFormData.value.name, signupFormData.value.mobile, userInfo.user.uid, 0, '');
             this.writeNewUser(user);
         }).catch((error) => {
             this.showError = true;
